@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="360" viewBox="0 0 300 360">
+  <defs>
+    <linearGradient id="g" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#0ea5e9"/>
+      <stop offset="1" stop-color="#1d4ed8"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="360" rx="24" fill="url(#g)"/>
+  <circle cx="150" cy="140" r="86" fill="#ffffff" opacity="0.95"/>
+  <text x="150" y="130" font-size="32" font-family="Arial" font-weight="800" text-anchor="middle" fill="#111827">LOGO</text>
+  <text x="150" y="168" font-size="28" font-family="Arial" font-weight="800" text-anchor="middle" fill="#111827">JATIM</text>
+  <text x="150" y="320" font-size="16" font-family="Arial" text-anchor="middle" fill="#ffffff">Ganti dengan logo resmi</text>
+</svg>

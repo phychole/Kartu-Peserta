@@ -1,0 +1,87 @@
+/* UI sederhana untuk halaman admin */
+:root {
+  --border:#e5e7eb;
+  --text:#111827;
+  --muted:#6b7280;
+  --danger:#b91c1c;
+  --bg:#f3f4f6;
+  --card:#ffffff;
+  --primary:#2563eb;
+  --primary-dark:#1d4ed8;
+  --primary-soft:rgba(37,99,235,.10);
+}
+* { box-sizing: border-box; }
+body.page { margin:0; font-family: Arial, Helvetica, sans-serif; color: var(--text); background: var(--bg); }
+a { color: inherit; text-decoration: none; }
+.container { max-width: 980px; margin: 20px auto; padding: 0 14px; }
+.topbar { display:flex; justify-content: space-between; align-items:center; padding: 14px 18px; background: var(--card); border-bottom:1px solid var(--border); position: sticky; top:0; }
+.topbar nav a { margin-left: 12px; padding: 8px 10px; border-radius: 10px; border:1px solid var(--border); background: #fff; }
+.topbar nav a:hover { background: var(--primary-soft); border-color: rgba(37,99,235,.35); }
+.topbar nav a.danger { border-color: #fecaca; color: var(--danger); }
+.panel { background: var(--card); border:1px solid var(--border); border-radius: 16px; padding: 16px; margin-bottom: 16px; box-shadow: 0 1px 3px rgba(0,0,0,.04); }
+h1,h2,h3 { margin: 0 0 10px; }
+.muted { color: var(--muted); }
+.small { font-size: 12px; }
+.card-ui { max-width: 440px; margin: 70px auto; background: var(--card); border:1px solid var(--border); border-radius: 16px; padding: 18px; box-shadow: 0 10px 20px rgba(0,0,0,.06); }
+label { display:block; margin: 10px 0 6px; font-weight: 700; font-size: 13px; }
+input[type=text], input[type=password], input[type=file] {
+  width: 100%; padding: 10px 12px; border:1px solid var(--border); border-radius: 12px; background: #fff;
+}
+button { margin-top: 12px; width: 100%; padding: 10px 12px; border: 0; border-radius: 12px; background: var(--primary); color: #fff; cursor: pointer; font-weight: 800; }
+button:hover { background: var(--primary-dark); }
+.alert { background: #fee2e2; border: 1px solid #fecaca; color: #7f1d1d; padding: 10px 12px; border-radius: 12px; }
+.success { background: #dcfce7; border: 1px solid #bbf7d0; color: #14532d; padding: 10px 12px; border-radius: 12px; }
+.grid { display:flex; gap: 12px; flex-wrap: wrap; }
+.stat { padding: 14px; border: 1px solid var(--border); border-radius: 14px; min-width: 160px; }
+.stat-num { font-size: 28px; font-weight: 800; }
+.form-row { display:grid; grid-template-columns: 80px 1fr 80px 1fr 1fr; gap: 8px; align-items:center; margin: 10px 0 14px; }
+.form-row input { width: 100%; margin:0; }
+@media (max-width: 760px) {
+  .form-row { grid-template-columns: 1fr; }
+  .topbar { flex-direction: column; align-items: flex-start; gap: 10px; }
+}
+
+.denah-form{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.denah-form .field{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+}
+
+.denah-form label{
+  font-weight:600;
+  font-size:14px;
+}
+
+.denah-form input,
+.denah-form select{
+  padding:10px 12px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  font-size:14px;
+  width:100%;
+}
+
+.denah-form .full{
+  grid-column: 1 / -1;
+}
+
+.denah-form button{
+  padding:12px;
+  border-radius:14px;
+  border:none;
+  background:var(--primary);
+  color:white;
+  font-weight:700;
+  cursor:pointer;
+}
+.denah-form button:hover{ background: var(--primary-dark); }
+
+pre { background:#0b1220; color:#e5e7eb; padding: 12px; border-radius: 14px; overflow:auto; }
+code { background:#f9fafb; padding: 2px 6px; border-radius: 8px; border: 1px solid var(--border); }
