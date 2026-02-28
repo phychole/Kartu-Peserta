@@ -20,7 +20,7 @@ $ajaxRoomsUrl = url('/admin/ajax_rooms.php');
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Dashboard - PSAJ</title>
+<title>Dashboard</title>
 <link rel="stylesheet" href="<?= url('/assets/style.css') ?>">
 
 <style>
@@ -225,7 +225,7 @@ body.page{ background: linear-gradient(180deg,var(--bg-soft),#fff 55%); }
 
 <header class="dash-topbar">
   <div class="brand">
-    <strong>PSAJ - Admin Dashboard</strong>
+    <strong>Administrasi Sumatif - Admin Dashboard</strong>
   </div>
   <a class="btn-logout" href="<?= url('/auth/logout.php') ?>">Logout</a>
 </header>
@@ -234,9 +234,9 @@ body.page{ background: linear-gradient(180deg,var(--bg-soft),#fff 55%); }
 
   <div class="hero">
     <div>
-      <h2 style="margin:0;color:var(--ink);font-size:18px;font-weight:900;">Ringkasan</h2>
+      <h2 style="margin:0;color:var(--ink);font-size:18px;font-weight:900;">Administrasi PSAJ 2026</h2>
       <p style="margin:6px 0 0;color:var(--muted);font-size:13px;">
-        Menu dikelola dalam bentuk kartu agar rapi dan mudah digunakan.
+        Aplikasi ini digunakan untuk administrasi kegiatan Sumatif
       </p>
     </div>
 
@@ -250,12 +250,13 @@ body.page{ background: linear-gradient(180deg,var(--bg-soft),#fff 55%); }
 
     <div class="card">
       <div class="card-icon">
-        <svg viewBox="0 0 24 24"><circle cx="12" cy="7" r="4"></circle><path d="M5 21c0-4 4-6 7-6s7 2 7 6"></path></svg>
+        <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M7 9h10M7 13h6"></path></svg>
       </div>
-      <h2 class="card-title">Data Peserta</h2>
-      <p class="card-desc">Kelola, edit, filter per kelas/ruang.</p>
-      <a class="btn" href="<?= url('/admin/peserta.php') ?>">Buka</a>
+      <h2 class="card-title">Setting Nomor</h2>
+      <p class="card-desc">Generator nomor peserta otomatis.</p>
+      <a class="btn" href="<?= url('/admin/setting_nomor.php') ?>">Buka</a>
     </div>
+
 
     <div class="card">
       <div class="card-icon">
@@ -268,12 +269,22 @@ body.page{ background: linear-gradient(180deg,var(--bg-soft),#fff 55%); }
 
     <div class="card">
       <div class="card-icon">
-        <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M7 9h10M7 13h6"></path></svg>
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="7" r="4"></circle><path d="M5 21c0-4 4-6 7-6s7 2 7 6"></path></svg>
       </div>
-      <h2 class="card-title">Setting Nomor</h2>
-      <p class="card-desc">Generator nomor peserta otomatis.</p>
-      <a class="btn" href="<?= url('/admin/setting_nomor.php') ?>">Buka</a>
+      <h2 class="card-title">Data Peserta</h2>
+      <p class="card-desc">Kelola, edit, filter per kelas/ruang.</p>
+      <a class="btn" href="<?= url('/admin/peserta.php') ?>">Buka</a>
     </div>
+
+    <div class="card">
+      <div class="card-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 1l3 5 5 1-4 4 1 6-5-3-5 3 1-6-4-4 5-1 3-5z"></path></svg>
+      </div>
+      <h2 class="card-title">Pengaturan KOP</h2>
+      <p class="card-desc">Ubah identitas sekolah, logo, dan kepala sekolah.</p>
+      <a class="btn" href="<?= url('/admin/settings_school.php') ?>">Buka</a>
+    </div>
+    
 
     <div class="card">
       <div class="card-icon">
@@ -293,14 +304,7 @@ body.page{ background: linear-gradient(180deg,var(--bg-soft),#fff 55%); }
       <a class="btn" href="<?= url('/admin/absensi_menu.php') ?>">Buka</a>
     </div>
 
-    <div class="card">
-      <div class="card-icon">
-        <svg viewBox="0 0 24 24"><path d="M12 1l3 5 5 1-4 4 1 6-5-3-5 3 1-6-4-4 5-1 3-5z"></path></svg>
-      </div>
-      <h2 class="card-title">Pengaturan KOP</h2>
-      <p class="card-desc">Ubah identitas sekolah, logo, dan kepala sekolah.</p>
-      <a class="btn" href="<?= url('/admin/settings_school.php') ?>">Buka</a>
-    </div>
+
 
     <div class="card">
       <div class="card-icon">
