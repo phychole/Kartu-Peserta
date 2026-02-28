@@ -35,3 +35,5 @@ Project ini sudah **auto-detect BASE_URL**, jadi aman jika diletakkan di folder 
 ## BASE_URL Otomatis
 Jika ditempatkan di folder apa pun (mis: `/kpsaj`), sistem otomatis mendeteksi `BASE_URL`.
 Include utama sekarang: `config/bootstrap.php`.
+## Library
+- Masuk folder project dan ketikkan composer require phpoffice/phpspreadsheet
