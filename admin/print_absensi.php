@@ -140,7 +140,7 @@ tbody tr{ height:5mm; }
 <div class="hr"></div>
 <div class="hr2"></div>
 
-<div class="title">DAFTAR HADIR PESERTA PSAJ TAHUN PELAJARAN <?= e(TAHUN_PELAJARAN) ?></div>
+      <div class="title">DAFTAR HADIR PESERTA <?= e(strtoupper(exam_name())) ?> TAHUN PELAJARAN <?= e(school_year()) ?></div>
 
 <div class="info">
   <div>

@@ -19,8 +19,8 @@ $stmt->execute($params);
 $rows = $stmt->fetchAll();
 
 $title = ($type === 'kartu')
-    ? "Kartu Peserta PSAJ Tahun Pelajaran " . TAHUN_PELAJARAN
-    : "Nomor Peserta PSAJ Tahun Pelajaran " . TAHUN_PELAJARAN;
+    ? "Kartu Peserta " . exam_name() . " Tahun Pelajaran " . school_year()
+    : "Nomor Peserta " . exam_name() . " Tahun Pelajaran " . school_year();
 
 $subtitle_red = "Kartu peserta wajib dibawa saat memasuki ruang ujian";
 $school = school_settings();

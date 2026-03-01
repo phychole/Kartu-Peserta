@@ -25,12 +25,6 @@ function clean_field(string $s): string {
   $s = preg_replace('/\s+/', ' ', $s);
   return $s;
 }
-function get_setting(string $key, string $default=''): string {
-  $st = db()->prepare("SELECT value FROM app_settings WHERE `key`=? LIMIT 1");
-  $st->execute([$key]);
-  $row = $st->fetch();
-  return $row ? (string)$row['value'] : $default;
-}
 
 /**
  * CEK DIGIT SESUAI POLA:

@@ -68,7 +68,7 @@ function col_width_percent(array $cp, float $seatUnit, float $gangUnit, float $t
   return ($u / $totalUnits) * 100.0;
 }
 
-$title = "DENAH DUDUK PENILAIAN SUMATIF AKHIR JENJANG TAHUN PELAJARAN 2025 - 2026";
+$title = "DENAH DUDUK " . strtoupper(exam_name()) . " TAHUN PELAJARAN " . school_year();
 ?>
 <!doctype html>
 <html lang="id">

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Waktu pembuatan: 28 Feb 2026 pada 13.34
+-- Waktu pembuatan: 01 Mar 2026 pada 07.46
 -- Versi server: 8.4.3
 -- Versi PHP: 8.3.16
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `psaj_kartu_peserta`
+-- Database: `psaj`
 --
 
 -- --------------------------------------------------------
@@ -32,15 +32,6 @@ CREATE TABLE `app_settings` (
   `value` text,
   `updated_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
---
--- Dumping data untuk tabel `app_settings`
---
-
-INSERT INTO `app_settings` (`key`, `value`, `updated_at`) VALUES
-('kode_kabupaten', '30', '2026-02-28 13:25:30'),
-('kode_sekolah', '0104', '2026-02-28 13:25:30'),
-('tahun_pelajaran', '2025 - 2026', '2026-02-28 13:25:30');
 
 -- --------------------------------------------------------
 
@@ -78,13 +69,6 @@ CREATE TABLE `school_profile` (
   `kepsek_nip` varchar(50) NOT NULL,
   `updated_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
---
--- Dumping data untuk tabel `school_profile`
---
-
-INSERT INTO `school_profile` (`id`, `line1`, `line2`, `line3`, `line4`, `line5`, `line6`, `logo_filename`, `logo_width_mm`, `kepsek_nama`, `kepsek_nip`, `updated_at`) VALUES
-(1, 'PEMERINTAH PROVINSI JAWA TIMUR', 'DINAS PENDIDIKAN', 'SMK NEGERI 2 LUMAJANG', 'Jalan Gajah Mada No.- Telp./Fax. (0334) 881925', 'Email: smkn_02lmj@yahoo.co.id | http://www.smkn2lumajang.sch.id', 'LUMAJANG', 'logo-jatim.svg', 16, 'Muhammad Saiful Bahri, S.Ag, M.Pd.I', '197401052003121004', '2026-02-28 13:33:56');
 
 -- --------------------------------------------------------
 

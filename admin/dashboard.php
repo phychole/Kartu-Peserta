@@ -234,7 +234,7 @@ body.page{ background: linear-gradient(180deg,var(--bg-soft),#fff 55%); }
 
   <div class="hero">
     <div>
-      <h2 style="margin:0;color:var(--ink);font-size:18px;font-weight:900;">Administrasi PSAJ 2026</h2>
+      <h2 style="margin:0;color:var(--ink);font-size:18px;font-weight:900;">Administrasi <?= e(exam_name()) ?> (<?= e(school_year()) ?>)</h2>
       <p style="margin:6px 0 0;color:var(--muted);font-size:13px;">
         Aplikasi ini digunakan untuk administrasi kegiatan Sumatif
       </p>
@@ -257,6 +257,24 @@ body.page{ background: linear-gradient(180deg,var(--bg-soft),#fff 55%); }
       <a class="btn" href="<?= url('/admin/setting_nomor.php') ?>">Buka</a>
     </div>
 
+    <div class="card">
+      <div class="card-icon">
+        <svg viewBox="0 0 24 24"><path d="M8 7h8"></path><path d="M8 11h8"></path><path d="M8 15h5"></path><rect x="5" y="3" width="14" height="18" rx="2"></rect></svg>
+      </div>
+      <h2 class="card-title">Pengaturan Ujian</h2>
+      <p class="card-desc">Ganti nama ujian & tahun pelajaran</p>
+      <a class="btn" href="<?= url('/admin/setting_exam.php') ?>">Buka</a>
+    </div>
+
+     <div class="card">
+      <div class="card-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 1l3 5 5 1-4 4 1 6-5-3-5 3 1-6-4-4 5-1 3-5z"></path></svg>
+      </div>
+      <h2 class="card-title">Identitas Sekolah</h2>
+      <p class="card-desc">Ubah identitas sekolah, logo, dan kepala sekolah.</p>
+      <a class="btn" href="<?= url('/admin/settings_school.php') ?>">Buka</a>
+    </div>
+
 
     <div class="card">
       <div class="card-icon">
@@ -276,14 +294,7 @@ body.page{ background: linear-gradient(180deg,var(--bg-soft),#fff 55%); }
       <a class="btn" href="<?= url('/admin/peserta.php') ?>">Buka</a>
     </div>
 
-    <div class="card">
-      <div class="card-icon">
-        <svg viewBox="0 0 24 24"><path d="M12 1l3 5 5 1-4 4 1 6-5-3-5 3 1-6-4-4 5-1 3-5z"></path></svg>
-      </div>
-      <h2 class="card-title">Pengaturan KOP</h2>
-      <p class="card-desc">Ubah identitas sekolah, logo, dan kepala sekolah.</p>
-      <a class="btn" href="<?= url('/admin/settings_school.php') ?>">Buka</a>
-    </div>
+   
     
 
     <div class="card">
@@ -329,7 +340,7 @@ body.page{ background: linear-gradient(180deg,var(--bg-soft),#fff 55%); }
         <!-- KARTU -->
         <div class="print-box">
           <h3>Kartu Peserta</h3>
-          <p>Cetak kartu peserta PSAJ</p>
+      <p>Cetak kartu peserta <?= e(exam_name()) ?></p>
 
           <form class="form-inline" method="get" action="<?= url('/admin/print_cards.php') ?>" target="_blank">
             <input type="hidden" name="type" value="kartu">

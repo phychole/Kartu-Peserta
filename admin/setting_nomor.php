@@ -62,7 +62,7 @@ if ($_SERVER['REQUEST_METHOD']==='POST') {
       <?php if ($error): ?><div class="alert"><?= e($error) ?></div><?php endif; ?>
 
       <form method="post">
-        <label>Kode Kabupaten</label>
+        <label>Kode Kabupaten/Kota</label>
         <input type="text" name="kode_kabupaten" value="<?= e($kode_kabupaten) ?>" placeholder="contoh: 30" required>
 
         <label>Kode Sekolah</label>
